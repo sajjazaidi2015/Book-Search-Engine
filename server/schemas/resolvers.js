@@ -7,9 +7,9 @@
 //     }
 //   },
 //   Mutation: {
-//     createUser: async (parent, {username, email, password}) => {
-//         const user = await User.create({username, email, password})
-//         return user;
+    // createUser: async (parent, {username, email, password}) => {
+    //     const user = await User.create({username, email, password})
+    //     return user;
 //     }
 //   }
 // };
@@ -27,6 +27,7 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
+        
     },
 
     Mutation: {
